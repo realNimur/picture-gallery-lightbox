@@ -1,0 +1,22 @@
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  &__ring{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px dashed #000;
+    animation: animateLoader 1s linear infinite ;
+  }
+}
+
+@keyframes animateLoader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
